@@ -1,0 +1,7 @@
+.alert {
+  background-color: red;
+  border: 1px solid red;
+  border-radius: 5px;
+  margin: 0 0 1em;
+  padding: 0.5em;
+}
