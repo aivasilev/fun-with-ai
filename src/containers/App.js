@@ -30,7 +30,7 @@ const App = () => {
   const onPictureSubmit = () => {
     setImageUrl(input);
     setInput('');
-    fetch('http://localhost:3030/imageapi', {
+    fetch('http://https://fun-with-ai-api.herokuapp.com:3030/imageapi', {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -40,7 +40,7 @@ const App = () => {
       .then((response) => response.json())
       .then((result) => {
         if (result !== 'error working with api') {
-          fetch('http://localhost:3030/image', {
+          fetch('http://https://fun-with-ai-api.herokuapp.com:3030/image', {
             method: 'put',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
