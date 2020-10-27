@@ -17,7 +17,7 @@ const SignInContainer = ({ loadUser, signIn, onRouteChange }) => {
   };
   const onSubmitSignIn = async () => {
     try {
-      const response = await fetch('https://fun-with-ai-api.herokuapp.com:3030/signin', {
+      const response = await fetch('https://fun-with-ai-api.herokuapp.com/signin', {
         method: 'post',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
