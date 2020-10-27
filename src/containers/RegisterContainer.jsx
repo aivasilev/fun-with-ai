@@ -17,7 +17,7 @@ const RegisterContainer = ({ onRouteChange }) => {
   };
   const onSubmitRegister = async () => {
     try {
-      const response = await fetch('http://https://fun-with-ai-api.herokuapp.com:3030/register', {
+      const response = await fetch('https://fun-with-ai-api.herokuapp.com:3030/register', {
         method: 'post',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
